@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Baloo+Chettan+2:wght@500&display=swap"
+        rel="stylesheet">
+    <title>my website</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Chettan 2', cursive;
+    }
+
+    .nevbar {
+        position: fixed;
+        text-decoration: none;
+        text-align: center;
+        background-color: rgb(77, 74, 74);
+        color: rgb(233, 220, 220);
+        display: flex;
+        width: 100%;
+        z-index: 3;
+
+        margin-top: 0;
+
+    }
+
+    .container {
+        z-index: 3;
+    }
+
+
+
+    body::before {
+        background-image: url(https://source.unsplash.com/1600x900/?food);
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+
+    .nevc {
+        display: flex;
+
+    }
+
+    ul {
+        padding-inline-start: 4px;
+
+        overflow: hidden;
+        flex-flow: wrap;
+    }
+
+    li {
+        text-decoration: none;
+        text-align: center;
+
+        list-style: none;
+        padding: 12px 2rem;
+
+    }
+
+    ul a:link {
+        background-color: rgb(77, 74, 74);
+        color: rgb(233, 220, 220);
+        text-decoration: none;
+    }
+
+    ul a:hover {
+        color: rgb(179, 113, 37);
+        text-decoration: none;
+
+    }
+
+    .gallery {
+        margin: 5px;
+        
+        border: 1px solid #ccc;
+        float: left;
+        width: 280px;
+        z-index: 2;
+        position: relative;
+
+    }
+
+    header:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    head {
+        position: fixed;
+    }
+
+    #gc {
+        box-sizing: border-box;
+        padding-top: 66px;
+        padding-block-start: 4rem;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        background-color: #ccc;
+    }
+</style>
+
+
+<body>
+    <header>
+
+
+        <div class="container" id="fc">
+            <ul class="nevbar" id="nev">
+                <a href="_blank">
+
+                    <li class="nevc" id="nevc1">HOME</li>
+                </a>
+                <a href="_blank">
+                    <li class="nevc" id="nevc2">ABOUT</li>
+
+                </a>
+                <a href="_blank">
+
+                    <li class="nevc" id="nevc3">SERVICES</li>
+                </a>
+                <a href="_blank">
+
+                    <li class="nevc" id="nevc4">BLOG</li>
+                </a>
+                <a href="_blank">
+
+                    <li class="nevc" id="nevc5">CONTACT</li>
+                </a>
+                <a href="blank">
+                    
+                    <li class = " nevc" id = "nevc6">SEARCH</li>
+                    <button onclick= "search"></button>  
+                
+
+                </a>
+
+            </ul>
+
+        </div>
+    </header>
+
+
+
+    <section class="gc" id="gc">
+
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/5616 × 3744">
+                <img src="https://source.unsplash.com/random/5616 × 3744" alt="Cinque Terre">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/9600 × 5400">
+                <img src="https://source.unsplash.com/random/9600 × 5400" alt="Forest">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/4022 × 5027">
+                <img src="https://source.unsplash.com/random/4022 × 5027" alt="Northern Lights">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/3912 × 4368">
+                <img src="https://source.unsplash.com/random/3912 × 4368" alt="Mountains 1">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/3002 × 6068">
+                <img src="https://source.unsplash.com/random/3002 × 6068" alt="Mountains 2">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/8012 × 4708">
+                <img src="https://source.unsplash.com/random/8012 × 4708" alt="Mountains 3">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/9452 × 5788">
+                <img src="https://source.unsplash.com/random/9452 × 5788" alt="Mountains 4">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/5912 × 4768">
+                <img src="https://source.unsplash.com/random/5912 × 4768" alt="Mountains 4">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/6842 × 2768">
+                <img src="https://source.unsplash.com/random/6842 × 2768" alt="Mountains 5">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://source.unsplash.com/random/1682 × 8768">
+                <img src="https://source.unsplash.com/random/1682 × 8768" alt="Mountains 6 ">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
